@@ -17,4 +17,9 @@ class ArtisanProfile extends Model
         'rating',
         'reviews_count',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
